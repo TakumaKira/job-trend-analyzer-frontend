@@ -197,10 +197,10 @@
     "@teambit/base-react.themes.theme-provider" "1.0.0"
     classnames "^2.3.2"
 
-"@takumakira-individual/tk-ui-react-v2.ui.line-chart@^0.0.3":
-  version "0.0.3"
-  resolved "https://node-registry.bit.cloud/@takumakira-individual/tk-ui-react-v2.ui.line-chart/-/tk-ui-react-v2.ui.line-chart-0.0.3.tgz#6bd1d42e8e8f22b750eb37399034281721d13650"
-  integrity sha512-aJEANGJwGqGk4nyvr8oaV/SBWmf0dQ4DSHk3F++7dI3/y7OAAiW8lm4wVhTRLKifxcpB/DB7lgJgihy9OZDKKA==
+"@takumakira-individual/tk-ui-react-v2.ui.line-chart@^0.0.4":
+  version "0.0.4"
+  resolved "https://node-registry.bit.cloud/@takumakira-individual/tk-ui-react-v2.ui.line-chart/-/tk-ui-react-v2.ui.line-chart-0.0.4.tgz#ed3304f2be08711eb4d6e0be30f7f8130367cf05"
+  integrity sha512-g/bS472tmF4RvSMZxTNnxTHef0TbpY6AZdMCB6GmQUebyJkuSeejh0wA5nC47gHhmNDBqXOwfv+L63ep0PcLdw==
   dependencies:
     chart.js "^4.4.2"
 

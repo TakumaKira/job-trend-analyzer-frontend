@@ -2,6 +2,7 @@ import Head from "next/head";
 import getConfig from 'next/config'
 import classNames from 'classnames';
 import styles from '@/styles/Home.module.scss';
+import TrendChart from "@/components/TrendChart";
 
 const { publicRuntimeConfig } = getConfig()
 
@@ -12,7 +13,7 @@ export default function Home() {
         <Head>
           <title>{publicRuntimeConfig.PAGE_TITLE}</title>
         </Head>
-        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Exercitationem expedita, ducimus, repellat obcaecati similique tempore dolores inventore asperiores cumque temporibus praesentium maxime ipsum cum ut rem sint at doloribus ad.</p>
+        <TrendChart />
       </div>
     </>
   );
