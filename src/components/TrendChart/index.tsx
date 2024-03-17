@@ -27,7 +27,7 @@ export default function TrendChart() {
     if (trendData) return
     const scrapeDates = rawData.flatMap(({ results }: { results: { job_title: string, job_location: string, scrape_date: string, count: number }[] }) => results.map(({ scrape_date }) => scrape_date.split(' ')[0]))
     const uniqueScrapeDates = Array.from<string>(new Set(scrapeDates)).sort()
-    const datasets = rawData.map(({ url, results }: { url: string, results: { job_title: string, job_location: string, scrape_date: string, count: number }[] }, i) => ({
+    const datasets = rawData.map(({ url, results }: { url: string, results: { job_title: string, job_location: string, scrape_date: string, count: number }[] }, i: number) => ({
       label: `${results[0].job_title} / ${results[0].job_location}`,
       data: results.map(({ count }) => count),
       fill: false,
