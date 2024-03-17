@@ -23,7 +23,7 @@ export default function TrendChart() {
   const [trendData, setTrendData] = useState<LineChartProps['data']>()
 
   const convertToChartData = useCallback(() => {
-    if (isLoading || !rawData) return
+    if (isLoading || error || !rawData) return
     const scrapeDates = rawData.flatMap(({ results }: { results: { job_title: string, job_location: string, scrape_date: string, count: number }[] }) => results.map(({ scrape_date }) => scrape_date.split(' ')[0]))
     const uniqueScrapeDates = Array.from<string>(new Set(scrapeDates)).sort()
     const datasets = rawData.map(({ url, results }: { url: string, results: { job_title: string, job_location: string, scrape_date: string, count: number }[] }, i: number) => ({
@@ -38,7 +38,7 @@ export default function TrendChart() {
       labels: uniqueScrapeDates,
       datasets
     })
-  }, [isLoading, rawData])
+  }, [error, isLoading, rawData])
   useEffect(convertToChartData, [convertToChartData])
 
   if (!trendData) return <span>Loading...</span>
