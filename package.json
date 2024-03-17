@@ -9,7 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "@takumakira-individual/tk-ui-react-v2.hooks.use-api": "^0.0.2",
+    "@takumakira-individual/tk-ui-react-v2.hooks.use-api": "^0.0.3",
     "@takumakira-individual/tk-ui-react-v2.hooks.use-theme-switcher": "^0.0.9",
     "@takumakira-individual/tk-ui-react-v2.themes.colors": "^0.0.3",
     "@takumakira-individual/tk-ui-react-v2.ui.line-chart": "^0.0.4",

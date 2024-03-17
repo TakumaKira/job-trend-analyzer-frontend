@@ -177,10 +177,10 @@
   dependencies:
     tslib "^2.4.0"
 
-"@takumakira-individual/tk-ui-react-v2.hooks.use-api@^0.0.2":
-  version "0.0.2"
-  resolved "https://node-registry.bit.cloud/@takumakira-individual/tk-ui-react-v2.hooks.use-api/-/tk-ui-react-v2.hooks.use-api-0.0.2.tgz#439ac7bee43444750a9dfd0418c9dc2dd37d443e"
-  integrity sha512-JoT5Qqfdiiqca6SC9zZAvsX3gCet5DVNKLsKvDgc0+N12P3jiMPXlvrqRSeMFGZHKDxAGBzEZF0RTrRPT3aYAA==
+"@takumakira-individual/tk-ui-react-v2.hooks.use-api@^0.0.3":
+  version "0.0.3"
+  resolved "https://node-registry.bit.cloud/@takumakira-individual/tk-ui-react-v2.hooks.use-api/-/tk-ui-react-v2.hooks.use-api-0.0.3.tgz#c180db4395eb969ebc2117ac1e4536564750c909"
+  integrity sha512-dckLxHTABX2AJHwnAK0tvy8zkEeXKxRJKosbTNia592wyh7zcEmo4G3C3d3WMY6T1zuKT7fuunyLN9kTuZtuag==
   dependencies:
     react-query "^3.39.3"
 
