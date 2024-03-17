@@ -23,7 +23,7 @@ export default function TrendChart() {
   const [trendData, setTrendData] = useState<LineChartProps['data']>()
 
   const convertToChartData = useCallback(() => {
-    if (isLoading || error || !rawData || rawData.error) return
+    if (isLoading || error || rawData.error || !rawData) return
     const scrapeDates = rawData.flatMap(({ results }: { results: { job_title: string, job_location: string, scrape_date: string, count: number }[] }) => results.map(({ scrape_date }) => scrape_date.split(' ')[0]))
     const uniqueScrapeDates = Array.from<string>(new Set(scrapeDates)).sort()
     const datasets = rawData.map(({ url, results }: { url: string, results: { job_title: string, job_location: string, scrape_date: string, count: number }[] }, i: number) => ({
@@ -41,9 +41,11 @@ export default function TrendChart() {
   }, [error, isLoading, rawData])
   useEffect(convertToChartData, [convertToChartData])
 
+  if (error?.message || rawData?.error) {
+    console.error(error, rawData)
+    return <span>{'An error has occurred: ' + (error?.message ?? rawData?.error)}</span>
+  }
   if (!trendData) return <span>Loading...</span>
-  if (error) return <span>{'An error has occurred: ' + error.message}</span>
-  if (rawData.error) return <span>{'An error has occurred: ' + rawData.error}</span>
   return (
     <LineChart data={trendData} />
   )
