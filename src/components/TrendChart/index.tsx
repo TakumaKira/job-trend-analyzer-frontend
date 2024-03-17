@@ -43,6 +43,7 @@ export default function TrendChart() {
 
   if (!trendData) return <span>Loading...</span>
   if (error) return <span>{'An error has occurred: ' + error.message}</span>
+  if (rawData.error) return <span>{'An error has occurred: ' + rawData.error}</span>
   return (
     <LineChart data={trendData} />
   )
