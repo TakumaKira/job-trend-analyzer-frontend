@@ -9,6 +9,7 @@ const nextConfig = {
   },
 };
 
+// node_modules using SASS/SCSS needs to be wrapped in next-transpile-modules
 const withTMWrapper = withTM([
   '@takumakira-individual/tk-ui-react-v2.themes.colors',
   '@takumakira-individual/tk-ui-react-v2.ui.nav-bar',

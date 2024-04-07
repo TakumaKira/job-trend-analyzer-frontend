@@ -6,7 +6,7 @@ import { ApiQueryClientProvider } from '@takumakira-individual/tk-ui-react-v2.ho
 import Layout from '@/components/Layout';
 
 export default function App({ Component, pageProps }: AppProps) {
-  const theme = useThemeSwitcher()
+  const { theme } = useThemeSwitcher()
   return (
     <ApiQueryClientProvider>
       <Colors overrides={theme === Theme.DARK ? colorsTokensDark : undefined}>

@@ -7,10 +7,17 @@
   resolved "https://registry.yarnpkg.com/@aashutoshrathi/word-wrap/-/word-wrap-1.2.6.tgz#bd9154aec9983f77b3a034ecaa015c2e4201f6cf"
   integrity sha512-1Yjs2SvM8TflER/OD3cOjhWWOZb58A2t7wpE2S9XfBYTiIl+XFhQG2bjy4Pu1I+EAlCNUzRDYDdFwFYUKvXcIA==
 
-"@babel/runtime@^7.23.2", "@babel/runtime@^7.23.8", "@babel/runtime@^7.5.5", "@babel/runtime@^7.6.2", "@babel/runtime@^7.7.2":
+"@babel/runtime@^7.23.2":
   version "7.24.0"
   resolved "https://registry.yarnpkg.com/@babel/runtime/-/runtime-7.24.0.tgz#584c450063ffda59697021430cb47101b085951e"
   integrity sha512-Chk32uHMg6TnQdvw2e9IlqPpFX/6NLuK0Ys2PqLb7/gL5uFn9mXvK715FGLlOLQrcO4qIkNHkvPGktzzXexsFw==
+  dependencies:
+    regenerator-runtime "^0.14.0"
+
+"@babel/runtime@^7.23.8", "@babel/runtime@^7.5.5", "@babel/runtime@^7.6.2", "@babel/runtime@^7.7.2":
+  version "7.24.4"
+  resolved "https://registry.yarnpkg.com/@babel/runtime/-/runtime-7.24.4.tgz#de795accd698007a66ba44add6cc86542aff1edd"
+  integrity sha512-dkxf7+hn8mFBwKjs9bvBlArzLVxVbS8usaPUDd5p2a9JCL9tB8OaOVN1isD4+Xyk4ns89/xeOmbQvgdK7IIVdA==
   dependencies:
     regenerator-runtime "^0.14.0"
 
@@ -177,37 +184,59 @@
   dependencies:
     tslib "^2.4.0"
 
-"@takumakira-individual/tk-ui-react-v2.hooks.use-api@^0.0.3":
-  version "0.0.3"
-  resolved "https://node-registry.bit.cloud/@takumakira-individual/tk-ui-react-v2.hooks.use-api/-/tk-ui-react-v2.hooks.use-api-0.0.3.tgz#c180db4395eb969ebc2117ac1e4536564750c909"
-  integrity sha512-dckLxHTABX2AJHwnAK0tvy8zkEeXKxRJKosbTNia592wyh7zcEmo4G3C3d3WMY6T1zuKT7fuunyLN9kTuZtuag==
+"@takumakira-individual/tk-ui-react-v2.entities.scraped-trend@1.0.0":
+  version "1.0.0"
+  resolved "https://node-registry.bit.cloud/@takumakira-individual/tk-ui-react-v2.entities.scraped-trend/-/tk-ui-react-v2.entities.scraped-trend-1.0.0.tgz#bf576746c01ea9a92b1b2700c897805c4de028ab"
+  integrity sha512-ARILj/VpVjjKUklKTIg78cMVZMxAsCzz7aOXyhrr/36m5ijpsh+JrviB27c8VHPh5Jt55IEtgwjNZdno1vpq7w==
+
+"@takumakira-individual/tk-ui-react-v2.hooks.use-api@1.0.3":
+  version "1.0.3"
+  resolved "https://node-registry.bit.cloud/@takumakira-individual/tk-ui-react-v2.hooks.use-api/-/tk-ui-react-v2.hooks.use-api-1.0.3.tgz#9b148b2b6ca1152b48a129ffaae7013fcd4e74c5"
+  integrity sha512-9oNulLyt6fcNvEO2ETcC+dG6iheHb/bCYgHGHLA/kK0q1u/SRTl+ixcAHTDeVLlOHE/0BeB6PVrKeQaXHmF3Ow==
   dependencies:
     react-query "^3.39.3"
 
-"@takumakira-individual/tk-ui-react-v2.hooks.use-theme-switcher@^0.0.9":
-  version "0.0.9"
-  resolved "https://node-registry.bit.cloud/@takumakira-individual/tk-ui-react-v2.hooks.use-theme-switcher/-/tk-ui-react-v2.hooks.use-theme-switcher-0.0.9.tgz#489a371e146164566c319bb8b49d93bc4fb34669"
-  integrity sha512-Y0Wsg0kW6t/Z3VoJoEEaNp91JOIo2EKpmT4na4hJd+/UhJHPIuq0RhkwB67w5Gj2IbSHpXdN8K8A4HLbvVBfJQ==
+"@takumakira-individual/tk-ui-react-v2.hooks.use-scraped-trend@1.0.4":
+  version "1.0.4"
+  resolved "https://node-registry.bit.cloud/@takumakira-individual/tk-ui-react-v2.hooks.use-scraped-trend/-/tk-ui-react-v2.hooks.use-scraped-trend-1.0.4.tgz#9e30257960166f66e1a02fa322710dd5b0264151"
+  integrity sha512-Zb6/OWX7LNVUPUhGzSSRJuvYOc4oBXETgpQT2Mddw4T6yRuHXAn9dWmb2ON1T20jVKt1FetGXCfJZ+SZx7ps0A==
+  dependencies:
+    "@takumakira-individual/tk-ui-react-v2.entities.scraped-trend" "1.0.0"
+    "@takumakira-individual/tk-ui-react-v2.hooks.use-api" "1.0.3"
 
-"@takumakira-individual/tk-ui-react-v2.themes.colors@^0.0.3":
-  version "0.0.3"
-  resolved "https://node-registry.bit.cloud/@takumakira-individual/tk-ui-react-v2.themes.colors/-/tk-ui-react-v2.themes.colors-0.0.3.tgz#eab0ee509767a604833b06b5fcac1ab638853247"
-  integrity sha512-zOuG77bSmia1xmQGQcecdXsIG0CaA5a6Fcjwe0E692ImVTKlrdMuemfsq+QmlUGJhRx3AyQusy3AD+j8Ubt7bw==
+"@takumakira-individual/tk-ui-react-v2.hooks.use-theme-switcher@^1.0.0":
+  version "1.0.0"
+  resolved "https://node-registry.bit.cloud/@takumakira-individual/tk-ui-react-v2.hooks.use-theme-switcher/-/tk-ui-react-v2.hooks.use-theme-switcher-1.0.0.tgz#bac90272086f2dda553d14f83195c411ecf96c3b"
+  integrity sha512-JlnR52dZudq6ewZe2O1SUWEk5DZe14I6iJlBOFPMU0Z6Ht7fRDJzxb085QwJ4vjyznUDAhDeCDHLrwX2S5WrQg==
+
+"@takumakira-individual/tk-ui-react-v2.themes.colors@^1.0.0":
+  version "1.0.0"
+  resolved "https://node-registry.bit.cloud/@takumakira-individual/tk-ui-react-v2.themes.colors/-/tk-ui-react-v2.themes.colors-1.0.0.tgz#8d2f298da2ec0d44131fa34d6118da5e21323332"
+  integrity sha512-/YdKLp3KIcG2CnY+o8MWrhT7ge5jZFNDQJHXrG7IKlSC3E+spdNsUO7FjovNCGSuKa61tg/XLdqKrMkgYNbw7Q==
   dependencies:
     "@teambit/base-react.themes.theme-provider" "1.0.0"
     classnames "^2.3.2"
 
-"@takumakira-individual/tk-ui-react-v2.ui.line-chart@^0.0.4":
-  version "0.0.4"
-  resolved "https://node-registry.bit.cloud/@takumakira-individual/tk-ui-react-v2.ui.line-chart/-/tk-ui-react-v2.ui.line-chart-0.0.4.tgz#ed3304f2be08711eb4d6e0be30f7f8130367cf05"
-  integrity sha512-g/bS472tmF4RvSMZxTNnxTHef0TbpY6AZdMCB6GmQUebyJkuSeejh0wA5nC47gHhmNDBqXOwfv+L63ep0PcLdw==
+"@takumakira-individual/tk-ui-react-v2.ui.job-trend-chart@^1.0.5":
+  version "1.0.5"
+  resolved "https://node-registry.bit.cloud/@takumakira-individual/tk-ui-react-v2.ui.job-trend-chart/-/tk-ui-react-v2.ui.job-trend-chart-1.0.5.tgz#0cc7be9a795a06362a7bc757fb3696f3c6fdcc1c"
+  integrity sha512-KF0cNXzQvQ04XDTIsFmffBOra9m9d73wur5e37b0pBYRACAtIh8yzkCPqBIkvjkafHvKBz8UETSEdC6KImaz5A==
+  dependencies:
+    "@takumakira-individual/tk-ui-react-v2.entities.scraped-trend" "1.0.0"
+    "@takumakira-individual/tk-ui-react-v2.hooks.use-scraped-trend" "1.0.4"
+    "@takumakira-individual/tk-ui-react-v2.ui.line-chart" "1.0.0"
+
+"@takumakira-individual/tk-ui-react-v2.ui.line-chart@1.0.0":
+  version "1.0.0"
+  resolved "https://node-registry.bit.cloud/@takumakira-individual/tk-ui-react-v2.ui.line-chart/-/tk-ui-react-v2.ui.line-chart-1.0.0.tgz#9a2c1dd4ac9ec2a4a31a17fb2b216c103b1ea906"
+  integrity sha512-36JeDDI4y+9qJMMXxP9Dl8/6nOAhpcfSaEZhqEjYEe43gaNcy6ao74gxqMfrQfPBk/clr3C9c2WP9/IcFAmJgQ==
   dependencies:
     chart.js "^4.4.2"
 
-"@takumakira-individual/tk-ui-react-v2.ui.nav-bar@^0.0.4":
-  version "0.0.4"
-  resolved "https://node-registry.bit.cloud/@takumakira-individual/tk-ui-react-v2.ui.nav-bar/-/tk-ui-react-v2.ui.nav-bar-0.0.4.tgz#53b7ac31e037a63639b1a6ef1d1b1f3f7ecb3c8d"
-  integrity sha512-//DQ9gYsatQbveTt5JHD0uli+w7sK8vl+Av83T4NtbeEEAE8hl3S7/iDJyFGiOEEnoHbCWmFp3HzRuQUpyuKZw==
+"@takumakira-individual/tk-ui-react-v2.ui.nav-bar@^1.0.0":
+  version "1.0.0"
+  resolved "https://node-registry.bit.cloud/@takumakira-individual/tk-ui-react-v2.ui.nav-bar/-/tk-ui-react-v2.ui.nav-bar-1.0.0.tgz#219abe594b2f03439168ff71d8c946b9fbdfcc7d"
+  integrity sha512-LUxPS3YtX3GfmFvdxoE/D+bpa1PwBYW7fpzV1tWlU7zdJfL+ofSTSuIB8JCeTQsqsJVA4ueEZMgLBjkdpp2Mnw==
   dependencies:
     classnames "^2.3.2"
 
